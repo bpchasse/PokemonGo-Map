@@ -4,16 +4,9 @@
 # auth service can either be "google" or "PTC"
 ---
 applications:
-- name: pokemongo-map
+- name: pogo-home
   memory: 256M
-  host: yourchosenservicename
+  host: pogo-home
   disk_quota: 200M
   instances: 1
   buildpack: https://github.com/cloudfoundry/buildpack-python.git
-  env:
-      AUTH_SERVICE: yourchosenauthservice
-      GMAPS_KEY: yourgmapsapikey
-      USERNAME: yourauthserviceusername
-      PASSWORD: yourauthservicepassword
-      LOCATION: "yourlocation"
-      STEP_COUNT: 5
